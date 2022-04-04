@@ -41,7 +41,7 @@ jobs:
         run: cmake . -Bbuild -DBUILD_SANITIZERS_THREAD=1 -DUSE_SIMPLE=0 -DUSE_PARALLEL=1 && cmake --build build --target tests
       - name: thread_sanitizer_check
         run: ./build/test/tests
-              - name: build
+      - name: build
         run: cmake . -Bbuild -DBUILD_SANITIZERS_THREAD=1 -DUSE_SIMPLE=1 -DUSE_PARALLEL=0 && cmake --build build --target tests
       - name: thread_sanitizer_check
         run: ./build/test/tests
